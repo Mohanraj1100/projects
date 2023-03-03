@@ -5,11 +5,10 @@ import java.util.logging.Logger;
 abstract class Check
 {
 	static Logger l = Logger.getLogger("hi");
-	static int size;
+	static int size = XoBoard.size;
 	char [][]xo;
 	Check(int size,char[][] xo)
 	{
-		Check.size = size;
 		this.xo = xo;
 	}
 	public static void check(int play1,int play2)
