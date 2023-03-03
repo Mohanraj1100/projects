@@ -50,6 +50,11 @@ class StudentLevel{
             break;
         case 'n':
         log.info("Ok ");
+	break;
+			
+		default:
+			log.info("Enter Valid Choice");
+			break;
     }
 }
 
