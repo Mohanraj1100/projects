@@ -1,4 +1,4 @@
-package assignment.shape;
+package assignment.shapes;
 
 import java.util.*;
 import java.util.logging.*;

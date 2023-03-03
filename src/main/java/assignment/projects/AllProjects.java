@@ -8,7 +8,7 @@ import assignment.frequency.Frequency;
 import assignment.graph.Coordinate;
 import assignment.hash.Hashing;
 import assignment.list.Main;
-import assignment.shape.Shape;
+import assignment.shapes.Shape;
 import assignment.studentgpa.Student;
 import assignment.studenttest.StudentTest;
 import assignment.tictactoe.TicTacToe;
