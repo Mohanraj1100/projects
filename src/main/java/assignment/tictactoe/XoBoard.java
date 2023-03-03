@@ -8,12 +8,13 @@ import java.util.logging.Logger;
 
 class XoBoard
 {
+	public static int size;
 	PrintStream ps = new PrintStream(new FileOutputStream(FileDescriptor.out));
 	Logger l = Logger.getLogger("XoBoard.class");
 	Scanner is = new Scanner(System.in);
 	int s;
 	char [][]xo;
-	static int size;
+	
 	Check ch;
 	XoBoard()
 	{
