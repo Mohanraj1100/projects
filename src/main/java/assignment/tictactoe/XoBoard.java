@@ -12,12 +12,12 @@ class XoBoard
 	Logger l = Logger.getLogger("XoBoard.class");
 	Scanner is = new Scanner(System.in);
 	char [][]xo;
-	int size;
+	static int size;
 	Check ch;
 	XoBoard()
 	{
 		ps.print("Enter the size of game");
-		this.size = is.nextInt();
+		XoBoard.size = is.nextInt();
 		
 		xo=new char[size][size];
 		for(int i=0;i<size;i++)
