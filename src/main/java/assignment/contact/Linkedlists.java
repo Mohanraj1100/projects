@@ -1,5 +1,6 @@
 package assignment.contact;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class Linkedlists {
@@ -40,7 +41,7 @@ class Linkedlists {
 			String c = "Contact Name: " + temp.contactname;
 			String p = "Phone Number: " + temp.phonenumber;
 			String e = "Email Address: "+ temp.emailaddress;
-			log.info(c +"\n"+p +"\n"+ e);
+			log.log(Level.INFO,()->""+c +"\n"+p +"\n"+ e);
 			temp=temp.next;
 		}
 		}
