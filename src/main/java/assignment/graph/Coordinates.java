@@ -2,7 +2,7 @@ package assignment.graph;
 
 import java.util.logging.Logger;
 
-class Coordinates implements Cloneable {
+class Coordinates implements cloneable {
     Float x;
     Float y;
     Logger log = Logger.getLogger("hi");
