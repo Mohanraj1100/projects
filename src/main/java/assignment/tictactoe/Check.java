@@ -4,15 +4,15 @@ import java.util.logging.Logger;
 
 abstract class Check
 {
-	Logger l = Logger.getLogger("hi");
-	int size;
+	static Logger l = Logger.getLogger("hi");
+	static int size;
 	char [][]xo;
 	Check(int size,char[][] xo)
 	{
-		this.size = size;
+		Check.size = size;
 		this.xo = xo;
 	}
-	public void check(int play1,int play2)
+	public static void check(int play1,int play2)
 	{
 		if(play1 == size)
 		{
@@ -27,4 +27,3 @@ abstract class Check
 	}
 	public abstract void condition();
 }
-
