@@ -10,7 +10,7 @@ class StudentLevel{
     char gradelevel;
     float gpa;
     float updatedgpa;
-    int response;
+    char response;
     Scanner inputobj = new Scanner(System.in);
     Logger log = Logger.getLogger("hi");
     StudentLevel(String studentname,char gradelevel,float gpa)
@@ -20,10 +20,11 @@ class StudentLevel{
     	this.gpa = gpa;
     }
     
-    void update() {
-        log.info("Do you need to update your GPA\nFor update type 1");
-        response = inputobj.nextInt();
-        if(response == 1) {
+    public void update() {
+        log.info("Do you need to update your GPA\nFor update type y or else n");
+        response = inputobj.next().charAt(0);
+        switch(response) {
+        case 'y':
         	try {
             log.info("Enter updated GPA");
             updatedgpa = inputobj.nextFloat();
@@ -45,14 +46,14 @@ class StudentLevel{
                 gpa = updatedgpa;
             } else {
                 log.info("Cannot be updated");
-            }		
-    }
-    else{
-        log.info("Invalid");
+            }
+            break;
+        case 'n':
+        log.info("Ok ");
     }
 }
 
-void result() {
+public void result() {
     log.log(Level.INFO,()-> studentname +" has a GPA Level of "+gpa);
 }
 	

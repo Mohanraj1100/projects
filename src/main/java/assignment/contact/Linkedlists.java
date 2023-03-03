@@ -41,8 +41,6 @@ class Linkedlists {
 			String p = "Phone Number: " + temp.phonenumber;
 			String e = "Email Address: "+ temp.emailaddress;
 			log.info(c +"\n"+p +"\n"+ e);
-			//log.info(p);
-			//log.info(e);
 			temp=temp.next;
 		}
 		}
@@ -102,7 +100,6 @@ class Linkedlists {
 					mark=1;
 					log.info(str);
 					prev.next=prev.next.next;
-					//head = prev;
 					break;
 				
 			}

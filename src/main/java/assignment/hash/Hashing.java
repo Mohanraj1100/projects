@@ -29,7 +29,7 @@ public class Hashing {
 			break;
 			
 		case 4:
-			System.exit(0);
+			log.info("Exit Sucessful");
 			break;
 			
 		default:

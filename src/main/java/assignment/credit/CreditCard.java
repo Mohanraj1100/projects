@@ -20,7 +20,7 @@ class CreditCard implements Cloneable{
     }
 
     void display() {
-        if( cardnumber == validcardno)
+        if( cardnumber.equals(validcardno))
         {
                 log.log(Level.INFO,()->"Cardholder name is"+ cardholder +" and card Number "+cardnumber+" And expiry date" + expirydate);
         }

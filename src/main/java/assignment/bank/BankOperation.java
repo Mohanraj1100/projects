@@ -11,7 +11,6 @@ class BankOperation {
     long accno;
     static float balance = 0;
     static int detect;
-//    Scanner inputobj = new Scanner(System.in);
     static Logger log=Logger.getLogger("hi");
     static List<Account> list = new ArrayList<Account>();
 	private BankOperation(String name,long accno,float balance){

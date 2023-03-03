@@ -10,7 +10,7 @@ class Storing
     String password;
     Connection con;
 	Logger log = Logger.getLogger("hi");
-	static Storing Firstobj = null;
+	static Storing firstobj = null;
 
     private Storing(String database, String username, String password) {
         this.database = database;
@@ -20,11 +20,11 @@ class Storing
 
     public static Storing in(String database,String username,String password) {
     	
-    	if(Firstobj == null)
+    	if(firstobj == null)
     	{
-    		Firstobj = new Storing(database,username,password);
+    		firstobj = new Storing(database,username,password);
     	}
-    	return Firstobj;
+    	return firstobj;
     }
 
     void connection()

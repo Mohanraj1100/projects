@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 public class TicTacToe 
 {
-	    public static int i;
+	    public  static int i;
 
 		public void tictactoe()
     {
