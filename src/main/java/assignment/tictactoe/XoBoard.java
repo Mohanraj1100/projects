@@ -8,19 +8,17 @@ import java.util.logging.Logger;
 
 class XoBoard
 {
-	public static int size;
 	PrintStream ps = new PrintStream(new FileOutputStream(FileDescriptor.out));
 	Logger l = Logger.getLogger("XoBoard.class");
 	Scanner is = new Scanner(System.in);
 	int s;
 	char [][]xo;
-	
+	static int size =3;
 	Check ch;
 	XoBoard()
 	{
 		ps.print("Enter the size of game");
 		s = is.nextInt();
-		XoBoard.size = s;
 		xo=new char[size][size];
 		for(int i=0;i<size;i++)
 		{
