@@ -1,4 +1,17 @@
 package assignment.projects;
+import assignment.Shape.Shape;
+import assignment.bank.BankAccount;
+import assignment.calculator.CalculatorOperation;
+import assignment.contact.Contacts;
+import assignment.credit.Credit;
+import assignment.database.Database;
+import assignment.frequency.Frequency;
+import assignment.graph.Coordinate;
+import assignment.hash.Hashing;
+import assignment.list.Main;
+import assignment.studentgpa.Student;
+import assignment.studenttest.StudentTest;
+import assignment.tictactoe.TicTacToe;
 
 import java.util.Scanner;
 import java.util.logging.Logger;
@@ -17,55 +30,68 @@ public class AllProjects
 	    	switch(choice)
 	    	{
 	    		case 1:
-	    			BankAccount.bank();
+	    			BankAccount ba = new BankAccount();
+	    			ba.bank();
 	    			break;
 	    			
 	    		case 2:
-	    			Shape.shape();
+	    			Shape sh = new Shape();
+	    			sh.shape();
 	    			break;
 	    			
 	    		case 3:
-	    			Student.student();
+	    			Student sd = new Student();
+	    			sd.student();
 	    			break;
 	    			
 	    		case 4:
-	    			Database.database();
+	    			Database db = new Database();
+	    			db.database();
 	    			break;
 	    			
 	    		case 5:
-	    			Coordinate.coordinate();
+	    			Coordinate cn = new Coordinate();
+	    			cn.coordinate();
 	    			break;
 	    			
 	    		case 6:
-	    			Credit.credit();
+	    			Credit cd = new Credit();
+	    			cd.credit();
 	    			break;
 	    			
 	    		case 7:
-	    			StudentTest.students();
+	    			StudentTest st = new StudentTest();
+	    			st.students();
 	    			break;
 	    			
 	    		case 8:
-	    			Main.list();
+	    			Main mn = new Main();
+	    			mn.list();
 	    			break;
 	    			
 	    		case 9:
-	    			Hashing.hash();
+	    			Hashing hh = new Hashing();
+	    			hh.hash();
 	    			break;
 	    			
 	    		case 10:
-	    			CalculatorOperation.calculator();
+	    			CalculatorOperation co = new CalculatorOperation();
+	    			co.calculator();
 	    			break;
 	    			
 	    		case 11:
-	    			Contacts.contact();
+	    			Contacts cs = new Contacts();
+	    			cs.contact();
 	    			break;
 	    			
 	    		case 12:
-	    			Frequency.frequency();
+	    			Frequency fy = new Frequency();
+	    			fy.frequency();
 	    			break;
 	    			
 	    		case 13:
-	    			TicTacToe.tictactoe();
+	    			TicTacToe tt = new TicTacToe();
+	    			tt.tictactoe();
 	    			break;
 	    		
 	    		case 14:
@@ -85,8 +111,6 @@ public class AllProjects
     	{
     		String f = ""+e;
     		log.info(f);
-//    		inp = false;
     	}
-//    	
     }
 }}
