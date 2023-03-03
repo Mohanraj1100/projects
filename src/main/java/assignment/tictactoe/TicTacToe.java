@@ -13,7 +13,7 @@ public class TicTacToe
     	Scanner sc = new Scanner(System.in);
     	XoBoard xb = new XoBoard();
     	int position;
-    	int size=xb.size;
+    	int size=XoBoard.size;
     	xb.printArray();
     	l.info("Player 1  x");
     	l.info("Player 2  o");
