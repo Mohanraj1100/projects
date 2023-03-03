@@ -9,7 +9,7 @@ abstract class Check
 	char [][]xo;
 	Check(int size,char[][] xo)
 	{
-		this.size = size;
+		Check.size = size;
 		this.xo = xo;
 	}
 	public static void check(int play1,int play2)
