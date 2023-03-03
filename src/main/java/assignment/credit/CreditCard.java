@@ -1,7 +1,7 @@
 package assignment.credit;
 import java.util.logging.*;
 
-class CreditCard implements Cloneable{
+class CreditCard implements cloneable{
     String cardholder;
     Long cardnumber;
     String expirydate;
