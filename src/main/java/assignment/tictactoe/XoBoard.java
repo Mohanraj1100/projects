@@ -11,14 +11,15 @@ class XoBoard
 	PrintStream ps = new PrintStream(new FileOutputStream(FileDescriptor.out));
 	Logger l = Logger.getLogger("XoBoard.class");
 	Scanner is = new Scanner(System.in);
+	int s;
 	char [][]xo;
 	static int size;
 	Check ch;
 	XoBoard()
 	{
 		ps.print("Enter the size of game");
-		XoBoard.size = is.nextInt();
-		
+		s = is.nextInt();
+		XoBoard.size = s;
 		xo=new char[size][size];
 		for(int i=0;i<size;i++)
 		{
