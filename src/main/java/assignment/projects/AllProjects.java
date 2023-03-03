@@ -90,8 +90,7 @@ public class AllProjects
 	    			break;
 	    			
 	    		case 13:
-	    			TicTacToe tt = new TicTacToe();
-	    			tt.tictactoe();
+	    			TicTacToe.tictactoe();
 	    			break;
 	    		
 	    		case 14:
