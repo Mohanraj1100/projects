@@ -11,7 +11,8 @@ class XoBoard
 	PrintStream ps = new PrintStream(new FileOutputStream(FileDescriptor.out));
 	Logger l = Logger.getLogger("XoBoard.class");
 	Scanner is = new Scanner(System.in);
-	static int s;
+	int s;
+	static int size = 3;
 	char [][]xo;
 	Check ch;
 	XoBoard()
@@ -27,7 +28,6 @@ class XoBoard
 				}
 		}
 	}
-	static int size = s;
 	void printArray()
 	{
 	for(int i=0;i<size;i++)
